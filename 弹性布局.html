@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="dist/js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="dist/css/bootstrap.css.map"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            list-style:none;
+        }
+        body{
+            background-color: #fff;
+
+        }
+
+        .box {
+            width: 280px;
+            height: 118px;
+            background-color: #fff;
+            margin: 30px auto;
+            border-radius: 4px;
+            display:flex;
+            flex-direction: column;
+        }
+
+        .user_image{
+            display: flex;
+            padding:10px;
+            flex:1px;
+            background-image:linear-gradient(to bottom, #46b8da,pink);
+        }
+
+        .user_image img{
+            width:80px;
+            height: 80px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        .user_ct{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+        }
+
+        .list{
+            height:64px;
+            display:flex;
+        }
+
+        .list li{
+            flex:1;
+            color:#fff;
+            text-align: center;
+        }
+
+        .list li span{
+            display:block;
+            height:20px;
+            width:20px;
+            margin:10px auto;
+            background-color: #CCC;
+        }
+
+        .list li:nth-child(1){
+            background-color: orange;
+        }
+
+        .list li:nth-child(2){
+            background-color: #269abc;
+        }
+
+        .list li:nth-child(3){
+            background-color:purple;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="user_image">
+        <img src="img/rfwe.jpg" alt="">
+    <div class="user_ct">
+        <h3>昵称 微风</h3>
+        <p>个性签名:所谓自由，不是随心所欲，而是自我主宰</p>
+        </div>
+    </div>
+    <ul class="list">
+        <li><span><img src="img/小鸟.jpg" width="25px" height="25px"></span>运动量</li>
+        <li><span><img src="img/爱心.jpg" width="25px" height="25px"></span>爱心公益</li>
+        <li><span><img src="img/书籍.jpg" width="25px" height="25px"></span>学习目标</li>
+        </ul>
+</div>
+
+</body>
+</html>
